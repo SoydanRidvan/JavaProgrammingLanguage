@@ -4,8 +4,6 @@ public class Primitives {
 
     public static void main(String[] args) {
 
-
-
             // DataType var;
                    // => 3 types variables => Local, Instance, Static
             int a; // => This is local variable, usage is limited in the scope of method, outside of this block you cannot use it
@@ -18,10 +16,7 @@ public class Primitives {
             System.out.println(b);
 
             long c = 200;
-
-            short d = (short)c;
-
-
+            short d = (short)c; // => ( ) before any variable or reference variable means casting
 
 
         }
