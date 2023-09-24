@@ -1,0 +1,199 @@
+		1. Primitives: int, double, char, boolean
+		2. Primitive Type Castings: Implicit vs Explicit
+		3. Wrapper class
+		4. String
+		5. String vs StringBuilder vs StringBuffer
+		6. Loops: for & while
+		7. Array
+		8. for each loop
+		9. Custom Methods
+		10. Method Overloading
+		11. Constructor
+		12. Class & Objects
+		13. Static vs Instance
+		14. Import Statements
+		15. Access Modifiers
+		16. OOP Encapsulations
+
+
+Variable:
+	DataType var
+
+
+1. Primitive DataTypes:
+	byte, short, int, long, float, double
+	char, boolean
+
+
+Non-Primitive DataTypes: String, Wrapper classes, classes, interfaces .....
+
+
+2. primitive type casting:
+
+		implicit: smaller primitive type to larger primitive type
+
+		explicit: larger primitive type to smaller primitive type
+
+
+3. Wrapper classes: used for converting primitives to objects
+
+
+
+Char Sequences:
+
+		String: immutable (unchangable) version of char sequences
+
+				a = "Cydeo"
+				b = new String("Cydeo")
+
+				methods: equals, equalsIgnoreCase, substring, lower/upperCase, charAt, split, toCharArray, replace, indexOf....
+
+
+		StringBuilder: mutable version of char sequences
+
+		StringBuffer: mutable version of char sequences, synchronized. slow
+
+
+
+6. Loops: for & while. repeated actions
+
+		for: if the number of repetition is known (fixed)
+
+				for(init; Condition; ++/--){
+						code fargments that NEED to be repeated
+				}
+
+		while: if the number of repetition is unknown (not fixed)
+
+				while(Condition){
+					code fargments that NEED to be repeated
+				}
+
+
+		break: terminates/exits the loop/switch
+
+		continue: skips the current iteration
+
+		return: exits the method
+
+
+
+7. Array: Data Structure
+		  Size is fixed.
+		  Faster
+		  Multi-dimensional
+		  Supports primitives & non primitives
+		  Index numbers
+
+
+8. for each loop: ONLY used for the data structures
+				  No index
+				  iteration order is fixed
+				  number of iteration is fixed
+
+
+
+9. Custom Methods: function that can perform a task
+				  grouping a series of code fragments
+				  improves reusability
+				  less codes
+				  maintainability
+				  readable
+
+				  AM static  ReturnType methodName(parameter){
+				  	codes that can perform the desired task
+				  }
+
+
+10. Method overloading: multiple methods having the same name in same class
+
+						Parameters MUST be different
+
+
+
+11. Constructor: used for creating objects
+				 every class have a constructor
+				 gets executed when the object is created
+				 can be used for initializing the instances
+
+
+			 In my framework:
+
+			 	BasePage:
+
+			 		public BasePage(){
+			 			PageFactory.initElements(Driver.getDriver, this);
+			 		}
+
+
+			 	HomePage extends BasePage
+			 	SecondPage extends BasePage
+			 	...
+
+		 			@FindBy ===> driver.findElement
+
+
+
+				 this()
+				 super()
+
+
+			  Driver:
+
+			  	private Driver(){
+
+			  	}
+
+
+
+12. Class & Objects:
+
+		class: A template/blueprint or a set of instructions of objects. where all objects came from. no memory allocated for classes
+
+		object: an instance of a class. each object has its own memory
+
+
+		formula is a class
+		medicine is an object
+
+
+
+13. Static vs Instance
+
+		instance:  Multiple copies. belongs to the objects
+
+		static:	   one copy ONLY. static belongs to the class
+
+
+14. Import Statements:
+
+		import page.class;
+
+		import static page.class.member;
+
+
+			assertTrue()
+			when()... then()...
+
+
+15. Access Modifiers:
+
+		private < default < protected < public
+
+
+
+16. OOP Encapsulations: Object hiding its data.
+						Make the instance variables private
+						generate public getter/setter (instance) methods
+
+						TO HAVE COMPLETE CONTROL OF INSTANCE VARIABLES
+
+						getter: read ONLY
+								Has no parameters
+
+						setter: Write ONLY
+								Has one parameter
+
+
+			My framework:
+				POJO
