@@ -39,43 +39,52 @@ Non-Primitive DataTypes: String, Wrapper classes, classes, interfaces .....
 
 
 
-Char Sequences:
+4. Char Sequences (Is a Class in Java): Combination of chars
+        String, String Builder and String Buffer classes are the child class of Char Sequences
 
-		String: immutable (unchangable) version of char sequences
+		String (Is a Class): immutable (unchangable) version of char sequences
+                When you create object of string in Heap memory, it stays unchangable in Heap memory until it is collected by Garbage Collector
 
-				a = "Cydeo"
-				b = new String("Cydeo")
+				a = "Cydeo" => " " String literals
+				b = new String("Cydeo") => New means new Object in memory
 
-				methods: equals, equalsIgnoreCase, substring, lower/upperCase, charAt, split, toCharArray, replace, indexOf....
+				String methods: equals, equalsIgnoreCase, substring, lower/upperCase, charAt, split, toCharArray, replace, indexOf....
 
 
 		StringBuilder: mutable version of char sequences
 
 		StringBuffer: mutable version of char sequences, synchronized. slow
+                      Synchronized means Thread Safe, Whenever multiple threads are created, they are executed concretely
+                      Just one thread will be executed in one time, the others will be locked
 
 
+    *** Object class is the parent class of all classes so all of the methods of Object class can be used by other classes
+        Object class provides common methods for all classes
+        finalize method is also common method besides equal method
 
 6. Loops: for & while. repeated actions
 
 		for: if the number of repetition is known (fixed)
 
 				for(init; Condition; ++/--){
-						code fargments that NEED to be repeated
+						code fragments that NEED to be repeated
 				}
 
 		while: if the number of repetition is unknown (not fixed)
 
 				while(Condition){
-					code fargments that NEED to be repeated
+					code fragments that NEED to be repeated
 				}
 
 
-		break: terminates/exits the loop/switch
+		break: terminates/exits the loop/switch => Branching statements
 
-		continue: skips the current iteration
+		continue: skips the current iteration => Branching statements
 
-		return: exits the method
+		return: exits the method => Branching statements
 
+                return exists one method
+                System.exit terminates all (everything)
 
 
 7. Array: Data Structure
