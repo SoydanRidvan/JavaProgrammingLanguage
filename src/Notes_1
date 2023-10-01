@@ -125,7 +125,7 @@ Non-Primitive DataTypes: String, Wrapper classes, classes, interfaces .....
                                           => You can call with the class name
                                           => If you dont use static keyword means it is a instance method
 
-            Access Modifier => Public, Protected (Reachable in same package, must be sub class to be able to reach outside the package),
+             Access Modifier => Public, Protected (Reachable in same package, must be sub class to be able to reach outside the package),
                                Default (reachable in the same package) , Private
 
             Return Types => Void and Return
