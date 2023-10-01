@@ -84,15 +84,16 @@ Non-Primitive DataTypes: String, Wrapper classes, classes, interfaces .....
 		return: exits the method => Branching statements
 
                 return exists one method
-                System.exit terminates all (everything)
+                System.exit terminates all (everything), this method is used rarely
 
 
-7. Array: Data Structure
+7. Array: Data Structure => DS is is just like variable, like container, in regular variable you can store just one data,
+                            in Data Structure variables you can store multiple datas in organized manner...
 		  Size is fixed.
 		  Faster
 		  Multi-dimensional
 		  Supports primitives & non primitives
-		  Index numbers
+		  Has index numbers
 
 
 8. for each loop: ONLY used for the data structures
@@ -109,9 +110,27 @@ Non-Primitive DataTypes: String, Wrapper classes, classes, interfaces .....
 				  maintainability
 				  readable
 
-				  AM static  ReturnType methodName(parameter){
+    Use case of methods; Driver class, Utility classes, assertions, connections in JDBC
+
+				  Access Modifier static  ReturnType methodName(parameter){
 				  	codes that can perform the desired task
 				  }
+
+            2 types of methods in Java;
+                - System library methods (Comes from jre)
+                - User define methods
+
+             *** Static keyword in method => Means method belongs to the class, class member not object member,
+                                             not need objects, objects can use also
+                                          => You can call with the class name
+                                          => If you dont use static keyword means it is a instance method
+
+            Access Modifier => Public, Protected (Reachable in same package, must be sub class to be able to reach outside the package),
+                               Default (reachable in the same package) , Private
+
+            Return Types => Void and Return
+                            Void => If the method is not returning a value, just performing the task
+                            Return => If method is returning value, you can use this value outside the method by calling method
 
 
 10. Method overloading: multiple methods having the same name in same class
